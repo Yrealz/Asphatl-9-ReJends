@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../CSS/SubsStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="../Assets/9gagpngwing.com.png" alt="Asphatl 9 ReJends" class="logo">
+            <nav>
+                <ul id="menuList">
+                    <li><a href="../HTML/Home.html">Home</a></li>
+                    <li><a href="../HTML/News.html">News</a></li>
+                    <li><a href="../HTML/Cars.html">Cars</a></li>
+                    <li><a href="../HTML/Esport.html">Esports</a></li>
+                    <li><a href="../HTML/Subs.html">Subscribe</a></li>
+                </ul>
+            </nav>
+            <img src="../Assets/adidaspngwing.com.png" alt="Asphatl 9 ReJends" class="menu-icon" onclick="togglemenu()">
+        </div>
+
+        <div class="form-container">
+            <form id="subscription-form">
+                <div class="form-group">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name">
+                </div>
+                <div class="form-group">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Birthday</label>
+                    <input type="date" id="birthday" name="birthday">
+                </div>
+                <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <div>
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="terms" name="terms">
+                    <label for="terms">I agree to the Gamefolt <a href="#">Terms and Conditions</a> and I have read the <a href="#">Privacy Policy</a>.</label>
+                </div>
+                <button type="submit">SIGN ME UP</button>
+            </form>
+        </div>
+        <script src="script.js"></script>
+
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2023 Gamefolt. All rights reserved.</p>
+            <div class="social-icons">
+                <a><img src="../Assets/Facebook.png" alt="Facebook"></a>
+                <a><img src="../Assets/Twitter.png" alt="Twitter"></a>
+                <a><img src="../Assets/Instagram.png" alt="Instagram"></a>
+                <a><img src="../Assets/Youtube.png" alt="Youtube"></a>
+                <a><img src="../Assets/Discord.png" alt="Discord"></a>
+             </div>
+        </div>
+    </footer>
+    <script src="../JS/HomeJs.js"></script>
+    <script src="../JS/SubsJs.js"></script>
+</body>
+</html>

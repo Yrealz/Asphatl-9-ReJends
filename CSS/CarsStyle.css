@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 50px;
+    cursor: pointer;
+    margin: 30px 0;
+}
+
+.menu-icon {
+    width: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+nav {
+    flex: 1;
+    text-align: right;
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+nav ul li a:hover {
+    color: red;
+}
+
+@media(max-width:768px) {
+    nav ul {
+        width: 100%;
+        position: absolute;
+        background: red;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+    }
+
+    nav ul li {
+        display: block;
+        margin-top: 1px;
+        margin-bottom: 1px;
+    }
+
+    nav ul li a {
+        color: white;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        overflow: hidden;
+        transition: .5s;
+    }
+}
+
+.footer {
+    background-color: grey;
+    color: black; 
+    text-align: center; 
+    padding: 50px; 
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.social-icons img {
+    width: 24px; 
+    height: 24px;
+}
+
+.tier-list {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.tier {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.tier h2 {
+    margin-top: 0;
+}
+
+.cars-container {
+    display: flex;
+    gap: 10px;
+}
+
+.car {
+    width: calc(25% - 10px);
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+
+.car img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.car p {
+    margin-top: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
